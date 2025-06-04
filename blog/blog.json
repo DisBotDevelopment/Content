@@ -2,17 +2,17 @@
     "blog": [
         {
             "slug": "sdfsd",
-            "title": "Understanding JSON",
-            "sumary": "A brief introduction to JSON and its uses in web development.",
+            "title": "DisBot Ultra and more News",
+            "sumary": "Introduce to DisBot Ultra and a Rebrand",
             "author": "xyzjesper",
             "authorIcon": "https://cdn.discordapp.com/avatars/850470027026759690/5053ad6fdffc3961166eb08569a1ec27.webp?size=1024",
-            "date": "2023-10-01",
+            "date": "2025-06-04",
             "tags": [
-                "JSON",
+                "DisBot Ultra",
                 "Web Development"
             ],
-            "mdFile": "understanding.md",
-            "image": "https://i.imgur.com/5Em8Wen.png"
+            "mdFile": "disbot-ultra.md",
+            "image": "https://i.imgur.com/WtWGkQ7.png"
         }
     ]
 }
