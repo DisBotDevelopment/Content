@@ -1,6 +1,7 @@
 {
     "blog": [
         {
+            "slug": "sdfsd",
             "title": "Understanding JSON",
             "sumary": "A brief introduction to JSON and its uses in web development.",
             "author": [
