@@ -1,0 +1,43 @@
+{
+  "Name": "DisBot (Moonlight)",
+  "Author": "dm@xyzjesper.dev (https://github.com/DisBotDevelopment)",
+  "UpdateUrl": null,
+  "DonateUrl": "https://ko-fi.com/xyzjesper",
+  "StartupCommand": "./run.sh",
+  "OnlineDetection": "Connected to gateway as",
+  "StopCommand": "^C",
+  "InstallShell": "/bin/bash",
+  "InstallDockerImage": "debian:latest",
+  "InstallScript": "#!/bin/bash\n\ncd /mnt/server\n\napt update -y\napt install curl -y\n\ncurl -o run.sh https://raw.githubusercontent.com/DisBotDevelopment/Content/refs/heads/main/run.sh\n\nchmod +x ./run.sh\n\necho \"==========================================\"\necho \"       Using DisBot Hosted Image\"\necho \"==========================================\"\necho \"\"\necho \"--> Web: https://disbot.app\"\necho \"--> GitHub: https://github.com/DisBotDevelopment/DisBot-Bot\"\necho \"--> A xyz Solution by xyzjesper.dev\"\necho \"\"\n",
+  "ParseConfiguration": "[]",
+  "AllocationsNeeded": 1,
+  "Variables": [
+    {
+      "Key": "MONGODBURL",
+      "DefaultValue": "",
+      "DisplayName": "Database URL",
+      "Description": "DisBot Database URL (MongoDB) to run DisBot",
+      "AllowView": true,
+      "AllowEdit": true,
+      "Filter": null
+    },
+    {
+      "Key": "CONFIG_PATH",
+      "DefaultValue": "/home/container/config.yml",
+      "DisplayName": "Config Path of the DisBot Config",
+      "Description": "Config Path of the DisBot Config",
+      "AllowView": true,
+      "AllowEdit": false,
+      "Filter": null
+    }
+  ],
+  "DefaultDockerImage": 0,
+  "AllowDockerImageChange": false,
+  "DockerImages": [
+    {
+      "DisplayName": "ghcr.io/disbotdevelopment/disbot-bot:latest-with-entry",
+      "Name": "ghcr.io/disbotdevelopment/disbot-bot:latest-with-entry",
+      "AutoPull": true
+    }
+  ]
+}
