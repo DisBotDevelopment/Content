@@ -8,7 +8,7 @@
   "StopCommand": "^C",
   "InstallShell": "/bin/bash",
   "InstallDockerImage": "debian:latest",
-  "InstallScript": "#!/bin/bash\n\ncd /mnt/server\n\napt update -y\napt install curl -y\n\ncurl -o run.sh https://raw.githubusercontent.com/DisBotDevelopment/Content/refs/heads/main/selfhost/run.sh\n\nchmod +x ./run.sh\n\necho \"==========================================\"\necho \"       Using DisBot Hosted Image\"\necho \"==========================================\"\necho \"\"\necho \"--> Web: https://disbot.app\"\necho \"--> GitHub: https://github.com/DisBotDevelopment/DisBot-Bot\"\necho \"--> A xyz Solution by xyzjesper.dev\"\necho \"\"\n",
+  "InstallScript": "#!/bin/bash\n\ncd /mnt/server\n\napt update -y\napt install curl -y\n\ncurl -o run.sh https://raw.githubusercontent.com/DisBotDevelopment/Content/refs/heads/main/run.sh\n\nchmod +x ./run.sh\n\necho \"==========================================\"\necho \"       Using DisBot Hosted Image\"\necho \"==========================================\"\necho \"\"\necho \"--> Web: https://disbot.app\"\necho \"--> GitHub: https://github.com/DisBotDevelopment/DisBot-Bot\"\necho \"--> A xyz Solution by xyzjesper.dev\"\necho \"\"\n",
   "ParseConfiguration": "[]",
   "AllocationsNeeded": 1,
   "Variables": [
@@ -35,8 +35,13 @@
   "AllowDockerImageChange": false,
   "DockerImages": [
     {
-      "DisplayName": "ghcr.io/disbotdevelopment/disbot-bot:latest-with-entry",
+      "DisplayName": "Latest Version of DisBot",
       "Name": "ghcr.io/disbotdevelopment/disbot-bot:latest-with-entry",
+      "AutoPull": true
+    },
+    {
+      "DisplayName": "Latest Dev-Build of DisBot",
+      "Name": "ghcr.io/disbotdevelopment/disbot-bot:latest-with-entry-dev",
       "AutoPull": true
     }
   ]
